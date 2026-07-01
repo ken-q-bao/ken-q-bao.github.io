@@ -92,7 +92,7 @@ main {
     padding-top: 140px !important;
   }
 
-  /* --- DISABLE FADE OVERLAYS ON MOBILE --- */
+  /* --- DISABLE FADE OVERLAYS ON MOBILE (THE FIX) --- */
   .left-image-column::after,
   .second-image-column::after {
     display: none !important;
