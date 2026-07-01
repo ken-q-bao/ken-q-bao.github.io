@@ -16,7 +16,6 @@ website:
         text: Resume/CV
       - href: research.qmd
         text: Research Projects
-      - California Department of Pesticide Regulation Data Explorer
       - href: mortgagecalc.qmd
         text: Mortgage Calculator
     right:
