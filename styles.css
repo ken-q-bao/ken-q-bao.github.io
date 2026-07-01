@@ -83,36 +83,44 @@
 
    /* Mobile breakpoint */
 /* -----------------------------------------------------------
-   Mobile fix
-   ----------------------------------------------------------- */
-
+   Mobile horizontal ribbon (fixed while scrolling)
+----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Remove fixed positioning so ALL mobile browsers load the images */
-  .left-image-column,
+  /* Turn left-image-column into a horizontal fixed ribbon */
+  .left-image-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 9999;
+  }
+
+  .left-image-column img {
+    height: 120px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: inline-block;
+  }
+
+  /* Hide the second column entirely on mobile */
   .second-image-column {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
-    z-index: 0 !important;
+    display: none !important;
   }
 
-  /* Make images normal responsive blocks */
-  .left-image-column img,
-  .second-image-column img {
-    width: 100% !important;
-    height: auto !important;
-    transform: none !important;
-    object-fit: contain !important;
-  }
-
-  /* Reset content shift */
+  /* Reset content shift and push content below ribbon */
   #quarto-content,
   .quarto-content,
   .page-body,
   .body-content,
   main {
     margin-left: 0 !important;
+    margin-top: 140px !important; /* ribbon height + padding */
   }
 }
