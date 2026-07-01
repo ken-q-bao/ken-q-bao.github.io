@@ -77,10 +77,9 @@ main {
     overflow-y: hidden;
     white-space: nowrap;
     z-index: 9999;
-    background: black; /* optional, improves ribbon contrast */
+    background: transparent !important; /* remove black box */
   }
 
-  /* Make ribbon images fill their tiles */
   .left-image-column img {
     width: 120px !important;
     height: 120px !important;
@@ -90,16 +89,19 @@ main {
   }
 
   /* ---------------------------
-     MOBILE BLACKBOARD ROW (Image 4)
+     MOBILE BLACKBOARD ROW
      --------------------------- */
   .second-image-column {
     display: block !important;
     position: static !important;
     width: 100% !important;
     height: 200px !important;
-    background-image: url("/images/blackboard.webp");
+
+    background-image: url("/images/blackboard.webp") !important;
     background-size: cover !important;
     background-position: center !important;
+    background-repeat: no-repeat !important;
+
     margin-top: 120px !important; /* sits below ribbon */
     z-index: 1;
   }
