@@ -6,6 +6,17 @@
   max-width: 300px;
 }
 
+#quarto-content,
+.quarto-content,
+.page-body,
+.body-content,
+main {
+  margin-left: 320px !important;
+  margin-top: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
 /* -----------------------------------------------------------
    Left-side fixed image column (clean solution)
    ----------------------------------------------------------- */
@@ -93,54 +104,12 @@
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* --- ROW 1: first 3 images as horizontal ribbon --- */
-  .left-image-column {
-    position: static !important;
-    width: 100% !important;
-    height: 120px !important;
-    display: flex !important;
-    flex-direction: row !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
-  }
-
-  .left-image-column img {
-    height: 120px !important;
-    width: auto !important;
-    flex-shrink: 0 !important;
-    object-fit: cover !important;
-  }
-
-  /* --- Disable desktop background image on mobile --- */
-  .second-image-column {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
-    background-image: none !important;
-    background-size: 0 !important;
-    background-repeat: no-repeat !important;
-  }
-
-  /* --- ROW 2: blackboard full-width underneath --- */
-  .blackboard-mobile {
-    width: 100%;
-    height: 180px;                 /* tune this */
-    background-image: url("/images/blackboard.webp");
-    background-size: cover;        /* tune zoom */
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 10px;
-  }
-
-  /* --- Push content below both rows --- */
   #quarto-content,
   .quarto-content,
   .page-body,
   .body-content,
   main {
-    margin-top: 310px !important;
     margin-left: 0 !important;
+    margin-top: 140px !important;
   }
 }
