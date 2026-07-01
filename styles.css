@@ -23,7 +23,7 @@ main {
 }
 
 /* -----------------------------------------------------------
-   DESKTOP: LEFT COLUMN (3 IMAGES + FADE)
+   DESKTOP: LEFT COLUMN (3 IMAGES)
 ----------------------------------------------------------- */
 .left-image-column {
   position: fixed;
@@ -40,20 +40,8 @@ main {
   display: block;
 }
 
-/* Fade overlay (desktop only) */
-.left-image-column::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background: rgba(255,255,255,0.15);
-  pointer-events: none;
-}
-
 /* -----------------------------------------------------------
-   DESKTOP: SECOND COLUMN (BLACKBOARD + FADE)
+   DESKTOP: SECOND COLUMN (BLACKBOARD)
 ----------------------------------------------------------- */
 .second-image-column {
   position: fixed;
@@ -70,37 +58,24 @@ main {
   background-position: top left;
 }
 
-/* Fade overlay (desktop only) */
-.second-image-column::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background: rgba(255,255,255,0.15);
-  pointer-events: none;
-}
-
 /* -----------------------------------------------------------
    MOBILE LAYOUT
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* --- MOBILE: BODY SHIFT (SAFE ACROSS ALL TABS) --- */
+  /* --- TEST: MOBILE BLOCK SHOULD TURN BACKGROUND RED --- */
   body {
-    padding-top: 140px !important;
+    background: red !important;
   }
 
-  /* --- DISABLE FADE OVERLAYS ON MOBILE (THE FIX) --- */
-  .left-image-column::after,
-  .second-image-column::after {
-    display: none !important;
+  /* --- MOBILE: DISABLE FIXED POSITIONING --- */
+  .left-image-column,
+  .second-image-column {
+    position: static !important;
   }
 
   /* --- MOBILE: ROW 1 (HORIZONTAL RIBBON) --- */
   .left-image-column {
-    position: static !important;
     width: 100% !important;
     height: 120px !important;
     display: flex !important;
@@ -110,10 +85,6 @@ main {
     white-space: nowrap !important;
   }
 
-  .left-image-column,
-  .second-image-column {
-    position: static !important;
-  }
   .left-image-column img {
     height: 120px !important;
     width: auto !important;
@@ -124,7 +95,6 @@ main {
 
   /* --- MOBILE: DISABLE DESKTOP BLACKBOARD BACKGROUND --- */
   .second-image-column {
-    position: static !important;
     width: 100% !important;
     height: auto !important;
     overflow: visible !important;
@@ -134,7 +104,7 @@ main {
     background-repeat: no-repeat !important;
   }
 
-  /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD + FADE) --- */
+  /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD) --- */
   .blackboard-mobile {
     width: 100% !important;
     height: 180px !important;
@@ -143,17 +113,5 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
-    position: relative;
-  }
-
-  .blackboard-mobile::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.15);
-    pointer-events: none;
   }
 }
