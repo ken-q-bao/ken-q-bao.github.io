@@ -87,10 +87,12 @@
    ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Remove fixed columns */
+  /* Hide fixed columns without triggering iOS Safari's image-loading bug */
   .left-image-column,
   .second-image-column {
-    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
   /* Reset content shift */
