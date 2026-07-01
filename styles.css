@@ -110,6 +110,10 @@ main {
     white-space: nowrap !important;
   }
 
+  .left-image-column,
+  .second-image-column {
+    position: static !important;
+  }
   .left-image-column img {
     height: 120px !important;
     width: auto !important;
