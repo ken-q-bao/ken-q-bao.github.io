@@ -92,6 +92,12 @@ main {
     padding-top: 140px !important;
   }
 
+  /* --- DISABLE FADE OVERLAYS ON MOBILE --- */
+  .left-image-column::after,
+  .second-image-column::after {
+    display: none !important;
+  }
+
   /* --- MOBILE: ROW 1 (HORIZONTAL RIBBON) --- */
   .left-image-column {
     position: static !important;
@@ -124,7 +130,7 @@ main {
     background-repeat: no-repeat !important;
   }
 
-  /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD + FADE) --- */
+  /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD) --- */
   .blackboard-mobile {
     width: 100% !important;
     height: 180px !important;
@@ -133,17 +139,5 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
-    position: relative;
-  }
-
-  .blackboard-mobile::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.15);
-    pointer-events: none;
   }
 }
