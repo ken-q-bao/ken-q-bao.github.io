@@ -1,0 +1,6 @@
+---
+title: "CV/Resume"
+page-layout: article
+---
+## Resume
+Link to Resume

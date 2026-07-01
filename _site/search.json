@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ken Bao",
+    "section": "",
+    "text": "Hello, welcome to my personal webpage. This site showcases my projects, tools, and applied work in pesticide regulatory science."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#a-little-about-me",
+    "href": "index.html#a-little-about-me",
+    "title": "Ken Bao",
+    "section": "A Little About Me",
+    "text": "A Little About Me\nI am a PhD Economist at the U.S. Environmental Protection Agency (EPA). There, I work at the Office of Pesticide Programs evaluating impacts to agriculture that could result from various pesticide-policy actions from the Agency."
+  },
+  {
+    "objectID": "index.html#research-data-and-environmental-economics",
+    "href": "index.html#research-data-and-environmental-economics",
+    "title": "Ken Bao",
+    "section": "Research, Data, and Environmental Economics",
+    "text": "Research, Data, and Environmental Economics\nI’m interested in environmental and resource economics, broadly, as well as econometrics in quasi-experimental settings. I have extensive experience analyzing economic/policy questions related to agricultural pollution starting with my job market paper. The paper compares the economic trade offs between two approaches to regulatoe non-point source pollution: using group-based market incentives vs. technological standards (command-and-control).\nIn my tenure at EPA’s Office of Pesticide Programs, I have gained experience in a broad array of data projects including geospatial analysis and database management, automated workflows using R Shiny, creating and managing big databases utilizing DuckDB and parquet file formatting, and"
+  },
+  {
+    "objectID": "Resume/CV.html",
+    "href": "Resume/CV.html",
+    "title": "CV/Resume",
+    "section": "",
+    "text": "Link to Resume"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research Projects",
+    "section": "",
+    "text": "Link to research."
+  }
+]

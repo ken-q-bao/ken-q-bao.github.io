@@ -1,0 +1,13 @@
+---
+title: Mortgage Calculator Intro
+page-layout: full
+---
+
+I created this app with the help of LLM's which likely saved many hours of having to read package documentations my self. The motivation for this app is to help match your preferences in housing with your budget contraints. Though, budgets typically are flexible too depending on what life styles you're willing to accept. There really isn't any calculator that I have found that can help
+
+<iframe 
+  src="https://bao-ken-epa.shinyapps.io/Mortgage_Calculator/" 
+  width="100%" 
+  height="800px" 
+  style="border:none;">
+</iframe>
