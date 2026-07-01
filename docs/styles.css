@@ -58,7 +58,13 @@
   height: 100vh;
   overflow: hidden;
   z-index: 0;
+
+  background-image: url("images/blackboard.webp");
+  background-size: 285%;        /* ← zoom OUT (100% = original, 90% = zoom out) */
+  background-repeat: no-repeat;
+  background-position: top left;
 }
+
 
 .second-image-column img {
   width: 300px;
