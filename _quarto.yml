@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  resources: 
+    - cv_build/CV.pdf
+    - research_papers/Ch1 - Command-Control Versus Market Incentive Policies for.pdf
+
+website:
+  title: "Ken Bao"
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: About
+      - href: CV.qmd
+        text: Resume/CV
+      - href: research.qmd
+        text: Research Projects
+      - California Department of Pesticide Regulation Data Explorer
+      - href: mortgagecalc.qmd
+        text: Mortgage Calculator
+    right:
+      - icon: envelope
+        href: mailto:tok0750@gmail.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ken-bao-b6089270/
+      - icon: github
+        href: https://github.com/ken-q-bao
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    include-before-body: left-column.html
+    css: styles.css
+    page-layout: full
+    toc: true

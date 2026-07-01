@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{publications.bib}
+
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \it\vspace{-2pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-3pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{{#1 \vspace{-4pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\newcommand{\resumeAreaHeading}[1]{\vspace{2pt}\item{\textit{#1}\vspace{-4pt}}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+%-------------------- HEADER --------------------
+\begin{center}
+  {\LARGE Ken Q. Bao} \\ \vspace{-3pt}
+  \begin{multicols}{2}
+    \begin{flushleft}
+      1155 Ripley St \\ Apt 1307 \\ Silver Spring, MD 20901
+    \end{flushleft}
+    \begin{flushright}
+      \href{https://github.com/ken-q-bao}{GitHub}\\
+      \href{https://www.linkedin.com/in/ken-bao-b6089270/}{LinkedIn} \\
+      \href{mailto:tok0750@gmail.com}{tok0750@gmail.com}
+    \end{flushright}
+  \end{multicols}
+\end{center}
+
+%-------------------- PROFESSIONAL SUMMARY --------------------
+\section{Professional Summary}
+Applied agricultural economist with experience assessing how regulatory, biological, and market conditions affect crop production and grower decisions. Conduct economic analyses for pesticide regulatory actions, emergency exemptions, and Endangered Species Act (ESA) consultations using USDA data, crop budgets, and geospatial evidence. Develop reproducible R‑based workflows to support policy‑relevant analysis of production systems and regulatory constraints across crops and regions.
+
+%-------------------- TECHNICAL SKILLS --------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item \textbf{Programming Languages:} R, Python, Git/GitHub
+\item \textbf{Geospatial:} spatial DuckDB for large agricultural GIS datasets; R/Shiny mapping tools for communicating county‑level regulatory impacts; production of publication‑quality maps supporting PULA development
+\item \textbf{Data:} Kynetec proprietary agricultural survey data; USDA NASS production, land‑use, and price data; Cropland Data Layer; and Crop Sequence Boundary datasets
+\item \textbf{Methods:} partial budgeting, structural economic framing, and evaluation of ratio‑based estimators (bias, consistency, variance)
+\end{itemize}
+
+%-------------------- EDUCATION --------------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California - Santa Barbara}{2017 -- 2023}
+{PhD, Economics}{Santa Barbara, CA}
+\resumeSubheading
+{University of Missouri - Saint Louis}{2014 -- 2017}
+{MA, Economics}{Saint Louis, MO}
+\resumeSubheading
+{University of Missouri - Saint Louis}{2012 -- 2014}
+{BA, Business Administration (Finance)}{Saint Louis, MO}
+\resumeSubHeadingListEnd
+
+%-------------------- JOB EXPERIENCE --------------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Economist, GS-0110-13}{Aug 2023 -- Present}
+{Environmental Protection Agency -- Office of Pesticide Programs}{Washington, D.C.}
+\resumeItemListStart
+\resumeAreaHeading{Hours: 40/week \quad | \quad Supervisor: TJ Wyatt}
+\resumeAreaHeading{Regulatory Impact Analysis}
+\begin{itemize}[leftmargin=0.2in]
+\resumeItem{\textbf{Evaluate economic impacts of pesticide restrictions} by comparing realistic grower alternatives and identifying where regulatory constraints alter production decisions.}
+\resumeItem{\textbf{Integrate biological, agronomic, and economic evidence} into decision-focused assessments used in Registration Review.}
+\resumeItem{\textbf{Produce analytical memos and briefings} for senior leadership explaining grower behavior, uncertainty, and policy implications.}
+\end{itemize}
+
+\resumeAreaHeading{Section 18 Emergency Exemptions}
+\begin{itemize}[leftmargin=0.2in]
+\resumeItem{\textbf{Estimate economic loss} for growers and stakeholders during pest control emergencies to determine eligibility for regulatory exemptions.}
+\resumeItem{Recent work includes evaluating tetflupyrolimet for herbicide‑resistant barnyardgrass in Arkansas rice.}
+\end{itemize}
+
+\resumeAreaHeading{Information Collection Requests (ICRs)}
+\begin{itemize}[leftmargin=0.2in]
+\resumeItem{\textbf{Estimate economic burden} associated with compliance activities under major ICRs, including the Worker Protection Standard and Certified Pesticide Applicator regulations.}
+\resumeItem{\textbf{Improved reproducibility and efficiency} by streamlining data collection and analysis workflows.}
+\end{itemize}
+
+\resumeAreaHeading{Endangered Species Act (ESA) Analysis}
+\begin{itemize}[leftmargin=0.2in]
+\resumeItem{\textbf{Develop R‑based geospatial tools} to map Pesticide Use Limitation Areas (PULAs) and assess county‑level burden under ESA‑driven restrictions.}
+\resumeItem{\textbf{Evaluate economic impacts of ESA} mitigation measures using USDA NRCS cost data and crop‑specific production information.}
+\resumeItem{\textbf{Communicate findings} to senior leadership through briefings and technical documentation.}
+\end{itemize}
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------- RESEARCH EXPERIENCE --------------------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Graduate Research Assistant}{2019 -- 2023}
+{University of California - Santa Barbara}{Santa Barbara, CA}
+\resumeItemListStart
+\resumeAreaHeading{Hours: 20/week \quad | \quad Supervisor: Chris Costello}
+\resumeItem{Supported research on environmental economics, technological change, and ecosystem service programs.}
+\resumeItem{Contributed to model development, literature reviews, and data preparation for multiple projects.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Graduate Research Assistant}{2015 -- 2017}
+{Center for Transportation Studies, University of Missouri - St. Louis}{St. Louis, MO}
+\resumeItemListStart
+\resumeAreaHeading{Hours: 20/week \quad | \quad Supervisor: Ray Mundy}
+\resumeItem{Conducted cost-benefit analyses for transportation policy proposals and prepared datasets for empirical analysis.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------- PUBLICATIONS --------------------
+\section{Peer Reviewed Publications}
+\fullcite{bracy_highway_2019}
+
+%-------------------- AWARDS --------------------
+\section{Awards, Honors \& Scholarships}
+\resumeSubHeadingListStart
+\resumeSubheading{Mortimer Andron Fellowship}{2017 -- 2019}{University of California - Santa Barbara}{}
+\resumeSubheading{Outstanding Undergraduate TA Award}{2021}{University of California - Santa Barbara}{}
+\resumeSubheading{Outstanding Student Award}{2017}{U.S. Department of Transportation}{}
+\resumeSubheading{Elizabeth M. Clayton Scholarship}{2016}{University of Missouri - St. Louis}{}
+\resumeSubHeadingListEnd
+
+\end{document}
