@@ -65,7 +65,7 @@ main {
 
   /* Diagnostic: proves mobile CSS is active */
   body {
-    background: red !important;
+    background: none !important;
   }
 
   /* --- OVERRIDE FIXED DESKTOP COLUMNS --- */
