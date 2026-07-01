@@ -87,21 +87,30 @@
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Turn left-image-column into a horizontal fixed ribbon */
-  .left-image-column {
+  /* Turn BOTH columns into one horizontal ribbon */
+  .left-image-column,
+  .second-image-column {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 120px;          /* ribbon height */
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     z-index: 9999;
   }
 
-  .left-image-column img {
+  /* Merge the second column's image into the same ribbon flow */
+  .second-image-column {
+    margin-left: 0 !important;   /* ensure it sits right after the first column */
+  }
+
+  /* Ribbon images */
+  .left-image-column img,
+  .second-image-column img {
     height: 120px;
     width: auto;
     flex-shrink: 0;
@@ -109,18 +118,13 @@
     display: inline-block;
   }
 
-  /* Hide the second column entirely on mobile */
-  .second-image-column {
-    display: none !important;
-  }
-
-  /* Reset content shift and push content below ribbon */
+  /* Push content below ribbon */
   #quarto-content,
   .quarto-content,
   .page-body,
   .body-content,
   main {
+    margin-top: 140px !important;
     margin-left: 0 !important;
-    margin-top: 140px !important; /* ribbon height + padding */
   }
 }
