@@ -33,7 +33,6 @@ format:
       - brand
     include-after-body: left-column.html
     css: styles.css
-    page-layout: full
     toc: true
 
 

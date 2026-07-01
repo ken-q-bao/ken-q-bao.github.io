@@ -1,5 +1,4 @@
 ---
 title: CV/Resume
-page-layout: full
 ---
 [📄 Download my CV/Resume (PDF)](cv_build/CV.pdf)

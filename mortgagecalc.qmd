@@ -1,6 +1,5 @@
 ---
 title: Mortgage Calculator Intro
-page-layout: full
 ---
 
 I created this app with the help of LLM's which likely saved many hours of having to read package documentations my self. All formulas are my own, only the front end code utilized LLM assistance. The motivation for this app is to help match your preferences in housing with your budget contraints. Though, budgets typically are flexible too depending on what life styles you're willing to accept. There really isn't any calculator that I have found that can help with thinking about your monthly financial obligations which includes the laundry-list of items such as private mortgage insurance if your downpayment is less than 20%. Hopefully you find this helpful~
