@@ -84,11 +84,14 @@
    Mobile fix
    ----------------------------------------------------------- */
    /* Mobile breakpoint */
+/* -----------------------------------------------------------
+   Mobile fix
+   ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
   /* Remove fixed columns */
-  .left-column,
-  .second-column {
+  .left-image-column,
+  .second-image-column {
     display: none !important;
   }
 
@@ -107,3 +110,4 @@
     background-size: cover !important;
   }
 }
+
