@@ -93,14 +93,14 @@
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Turn BOTH columns into one horizontal ribbon */
+  /* Turn both columns into one horizontal ribbon */
   .left-image-column,
   .second-image-column {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;          /* ribbon height */
+    height: 120px;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -109,19 +109,25 @@
     z-index: 9999;
   }
 
-  /* Merge the second column's image into the same ribbon flow */
-  .second-image-column {
-    margin-left: 0 !important;   /* ensure it sits right after the first column */
-  }
-
-  /* Ribbon images */
-  .left-image-column img,
-  .second-image-column img {
+  /* First column images */
+  .left-image-column img {
     height: 120px;
     width: auto;
     flex-shrink: 0;
     object-fit: cover;
     display: inline-block;
+  }
+
+  /* Mobile blackboard element */
+  .blackboard-mobile {
+    height: 120px;
+    width: auto;
+    flex-shrink: 0;
+    background-image: url("images/blackboard.webp");
+    background-size: contain;     /* zoom control */
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1 / 1;          /* keeps shape stable */
   }
 
   /* Push content below ribbon */
