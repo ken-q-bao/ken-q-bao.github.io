@@ -9,3 +9,4 @@ for (f in jpg_files) {
   out <- sub("\\.jpg$", ".webp", f)
   image_write(img, out, quality = 80)
 }
+
