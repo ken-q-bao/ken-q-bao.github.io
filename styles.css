@@ -87,12 +87,25 @@
    ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Hide fixed columns without triggering iOS Safari's image-loading bug */
+@media (max-width: 768px) {
+
+  /* Remove fixed positioning so ALL mobile browsers load the images */
   .left-image-column,
   .second-image-column {
-    visibility: hidden !important;
-    height: 0 !important;
-    overflow: hidden !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    z-index: 0 !important;
+  }
+
+  /* Make images normal responsive blocks */
+  .left-image-column img,
+  .second-image-column img {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    object-fit: contain !important;
   }
 
   /* Reset content shift */
@@ -102,11 +115,5 @@
   .body-content,
   main {
     margin-left: 0 !important;
-  }
-
-  /* Ensure body scrolls normally */
-  body {
-    background-attachment: scroll !important;
-    background-size: cover !important;
   }
 }
