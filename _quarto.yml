@@ -31,7 +31,6 @@ format:
     theme:
       - cosmo
       - brand
-    include-after-body: left-column.html
     css: styles.css
     toc: true
 

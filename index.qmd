@@ -2,6 +2,16 @@
 title: ""
 ---
 
+<!-- LEFT COLUMN -->
+<div class="left-image-column">
+  <img src="/images/nature.webp">
+  <img src="/images/haleakala.webp">
+  <img src="/images/grandcanyon.webp">
+</div>
+
+<!-- RIGHT COLUMN -->
+<div class="second-image-column"></div>
+
 Hello, welcome to my personal webpage. This site showcases my projects, tools, and applied economic work particularly in pesticide regulations.
 
 I am a PhD Economist at the U.S. Environmental Protection Agency (EPA). There, I work at the Office of Pesticide Programs evaluating impacts to agriculture that could result from various pesticide-policy actions from the Agency. 
