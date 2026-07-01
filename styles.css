@@ -80,3 +80,30 @@
   z-index: 9999 !important;
 }
 
+/* -----------------------------------------------------------
+   Mobile fix
+   ----------------------------------------------------------- */
+   /* Mobile breakpoint */
+@media (max-width: 768px) {
+
+  /* Remove fixed columns */
+  .left-column,
+  .second-column {
+    display: none !important;
+  }
+
+  /* Reset content shift */
+  #quarto-content,
+  .quarto-content,
+  .page-body,
+  .body-content,
+  main {
+    margin-left: 0 !important;
+  }
+
+  /* Ensure body scrolls normally */
+  body {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
+}
