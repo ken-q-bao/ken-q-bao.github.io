@@ -1,5 +1,6 @@
 ---
 title: "Research Projects"
+page-layout: full
 ---
 
 [📄 Command-Control vs. Market Incentive Policies in Non-point Source Pollution](research_papers/Ch1 - Command-Control Versus Market Incentive Policies for.pdf)

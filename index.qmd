@@ -1,5 +1,6 @@
 ---
 title: ""
+page-layout: full
 ---
 
 Hello, welcome to my personal webpage. This site showcases my projects, tools, and applied economic work particularly in pesticide regulations.
