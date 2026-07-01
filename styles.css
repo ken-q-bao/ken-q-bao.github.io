@@ -59,33 +59,35 @@ main {
 }
 
 /* -----------------------------------------------------------
-   MOBILE LAYOUT
+   MOBILE LAYOUT (HIGH-SPECIFICITY OVERRIDES)
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* --- TEST: MOBILE BLOCK SHOULD TURN BACKGROUND RED --- */
+  /* Diagnostic: proves mobile CSS is active */
   body {
     background: red !important;
   }
 
-  /* --- MOBILE: DISABLE FIXED POSITIONING --- */
-  .left-image-column,
-  .second-image-column {
+  /* --- OVERRIDE FIXED DESKTOP COLUMNS --- */
+  body .left-image-column,
+  body .second-image-column {
     position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   /* --- MOBILE: ROW 1 (HORIZONTAL RIBBON) --- */
-  .left-image-column {
-    width: 100% !important;
-    height: 120px !important;
+  body .left-image-column {
     display: flex !important;
     flex-direction: row !important;
+    height: 120px !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
   }
 
-  .left-image-column img {
+  body .left-image-column img {
     height: 120px !important;
     width: auto !important;
     flex-shrink: 0 !important;
@@ -94,24 +96,20 @@ main {
   }
 
   /* --- MOBILE: DISABLE DESKTOP BLACKBOARD BACKGROUND --- */
-  .second-image-column {
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
-
+  body .second-image-column {
     background-image: none !important;
     background-size: 0 !important;
     background-repeat: no-repeat !important;
   }
 
   /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD) --- */
-  .blackboard-mobile {
+  body .blackboard-mobile {
     width: 100% !important;
     height: 180px !important;
     background-image: url("/images/blackboard.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 10px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-top: 10px !important;
   }
 }
