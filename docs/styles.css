@@ -70,7 +70,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw !important;   /* FIX: full viewport width */
     height: 120px;
     display: flex;
     overflow-x: auto;
@@ -95,8 +95,8 @@ main {
     position: fixed !important;
     top: 120px !important;      /* directly under ribbon 1 */
     left: 0 !important;
-    width: 100% !important;
-    height: 80px !important;    /* narrow horizontal bar */
+    width: 100vw !important;    /* FIX: full viewport width */
+    height: 80px !important;    /* FIX: narrow horizontal bar */
     display: block !important;
     overflow: hidden !important;
 
@@ -105,7 +105,7 @@ main {
     background-position: center !important;
     background-repeat: no-repeat !important;
 
-    z-index: 9998;              /* just under ribbon 1 */
+    z-index: 9998;
   }
 
   /* ---------------------------
@@ -117,6 +117,6 @@ main {
   .body-content,
   main {
     margin-left: 0 !important;
-    margin-top: 200px !important; /* 120 + 80 */
+    margin-top: calc(120px + 80px + 20px) !important; /* FIX: correct offset */
   }
 }
