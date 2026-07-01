@@ -1,14 +1,6 @@
 ---
 title: "Research Projects"
+page-layout: full
 ---
-<!-- LEFT COLUMN -->
-<div class="left-image-column">
-  <img src="/images/nature.webp">
-  <img src="/images/haleakala.webp">
-  <img src="/images/grandcanyon.webp">
-</div>
-
-<!-- RIGHT COLUMN -->
-<div class="second-image-column"></div>
 
 [📄 Command-Control vs. Market Incentive Policies in Non-point Source Pollution](research_papers/Ch1 - Command-Control Versus Market Incentive Policies for.pdf)

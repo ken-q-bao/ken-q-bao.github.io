@@ -63,53 +63,40 @@ main {
 ----------------------------------------------------------- */
 @media (max-width: 768px) {
 
-  /* Diagnostic: proves mobile CSS is active */
-  body {
-    background: none !important;
+  /* Turn left-image-column into a horizontal fixed ribbon */
+  .left-image-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 9999;
   }
 
-  /* --- OVERRIDE FIXED DESKTOP COLUMNS --- */
-  body .left-image-column,
-  body .second-image-column {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
+  .left-image-column img {
+    height: 120px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: inline-block;
   }
 
-  /* --- MOBILE: ROW 1 (HORIZONTAL RIBBON) --- */
-  body .left-image-column {
-    display: flex !important;
-    flex-direction: row !important;
-    height: 120px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
+  /* Hide the second column entirely on mobile */
+  .second-image-column {
+    display: none !important;
   }
 
-  body .left-image-column img {
-    height: 120px !important;
-    width: auto !important;
-    flex-shrink: 0 !important;
-    object-fit: cover !important;
-    display: inline-block !important;
-  }
-
-  /* --- MOBILE: DISABLE DESKTOP BLACKBOARD BACKGROUND --- */
-  body .second-image-column {
-    background-image: none !important;
-    background-size: 0 !important;
-    background-repeat: no-repeat !important;
-  }
-
-  /* --- MOBILE: ROW 2 (FULL-WIDTH BLACKBOARD) --- */
-  body .blackboard-mobile {
-    width: 100% !important;
-    height: 180px !important;
-    background-image: url("/images/blackboard.webp");
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    margin-top: 10px !important;
+  /* Reset content shift and push content below ribbon */
+  #quarto-content,
+  .quarto-content,
+  .page-body,
+  .body-content,
+  main {
+    margin-left: 0 !important;
+    margin-top: 140px !important;
   }
 }

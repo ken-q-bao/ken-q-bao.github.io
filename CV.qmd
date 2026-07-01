@@ -1,14 +1,5 @@
 ---
 title: CV/Resume
+page-layout: full
 ---
-<!-- LEFT COLUMN -->
-<div class="left-image-column">
-  <img src="/images/nature.webp">
-  <img src="/images/haleakala.webp">
-  <img src="/images/grandcanyon.webp">
-</div>
-
-<!-- RIGHT COLUMN -->
-<div class="second-image-column"></div>
-
 [📄 Download my CV/Resume (PDF)](cv_build/CV.pdf)
