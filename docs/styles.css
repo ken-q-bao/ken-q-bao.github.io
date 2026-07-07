@@ -25,21 +25,29 @@ main {
 /* -----------------------------------------------------------
    DESKTOP: LEFT COLUMN (3 IMAGES)
 ----------------------------------------------------------- */
+
 .left-image-column {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;   /* FIX */
 
   width: 300px;
+
+  /* Critical fix for Chrome */
+  display: inline-block;
+
   overflow: visible;
   z-index: 9999;
 }
 
+/* Desktop: make 3 images fit in the viewport while column stays fixed */
 .left-image-column img {
   width: 300px;
+  height: calc(100vh / 3);  /* each image = one third of viewport height */
+  object-fit: cover;
   display: block;
 }
+
 
 /* -----------------------------------------------------------
    DESKTOP: SECOND COLUMN (BLACKBOARD)
