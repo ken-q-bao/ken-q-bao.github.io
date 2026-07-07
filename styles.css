@@ -29,14 +29,10 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: auto;        /* critical: breaks Chrome’s viewport clamping */
   width: 300px;
 
-  /* Critical: allow the fixed element to size to its content */
-  height: max-content;
-
-  /* Prevent Chrome from collapsing the height */
-  inset: 0 auto auto 0;
-
+  height: max-content; /* now works because bottom:auto is present */
   overflow: visible;
   z-index: 9999;
 }
@@ -45,7 +41,6 @@ main {
   width: 300px;
   display: block;
 }
-
 
 /* -----------------------------------------------------------
    DESKTOP: SECOND COLUMN (BLACKBOARD)
