@@ -29,15 +29,9 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-
-  /* Critical: Chrome needs BOTH top and bottom anchors */
-  bottom: auto;
+  bottom: 0;   /* FIX */
 
   width: 300px;
-
-  /* Allows the column to grow to fit all images */
-  height: max-content;
-
   overflow: visible;
   z-index: 9999;
 }
