@@ -29,8 +29,10 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: auto;        /* critical: breaks Chrome’s viewport clamping */
   width: 300px;
-  height: auto;
+
+  height: max-content; /* now works because bottom:auto is present */
   overflow: visible;
   z-index: 9999;
 }
