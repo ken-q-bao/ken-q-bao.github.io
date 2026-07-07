@@ -29,10 +29,15 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: auto;        /* critical: breaks Chrome’s viewport clamping */
+
+  /* Critical: Chrome needs BOTH top and bottom anchors */
+  bottom: auto;
+
   width: 300px;
 
-  height: max-content; /* now works because bottom:auto is present */
+  /* Allows the column to grow to fit all images */
+  height: max-content;
+
   overflow: visible;
   z-index: 9999;
 }
